@@ -59,44 +59,36 @@ function handleScroll(event) {
 
 // Add wheel event listener to the document
 document.addEventListener('wheel', handleScroll);
-
 // Existing code...
 
-// Existing code...
-// Existing code...
-
-// Existing code...
-
-// Get all carousel items and corresponding content
-let carouselItems = document.querySelectorAll('.carousel .list .item');
-let carouselContents = document.querySelectorAll('.carousel .list .item .content');
-
-// Add click event listener to each item
-carouselItems.forEach((item, index) => {
-    // Get the image element within each item
-    let img = item.querySelector('img');
-
-    // Add click event listener to the image
-    img.addEventListener('click', () => {
-        // Call a function to handle item click and pass the index
-        console.log(index);
-        openContent(index);
-    });
-});
-
-// Function to open the corresponding content when an item is clicked
-function openContent(index) {
-    // Hide all other contents
-    carouselContents.forEach((content, i) => {
-        if (i !== index) {
-            content.style.display = 'none';
-        }
-    });
-
-    // Display the clicked content
-    carouselContents[index].style.display = 'block';
-
-    // Add any additional functionality you need when an item is clicked
+// Function to handle touch events
+function handleTouchStart(event) {
+    // Get the initial touch position
+    startY = event.touches[0].clientY;
 }
+
+function handleTouchMove(event) {
+    // Get the current touch position
+    let currentY = event.touches[0].clientY;
+
+    // Calculate the distance moved
+    let deltaY = startY - currentY;
+
+    // Determine the direction of the scroll
+    if (deltaY > 0) {
+        // Scrolling up
+        showSlider('next');
+    } else {
+        // Scrolling down
+        showSlider('prev');
+    }
+
+    // Update the starting position for the next move
+    startY = currentY;
+}
+
+// Add touch event listeners to the document
+document.addEventListener('touchstart', handleTouchStart);
+document.addEventListener('touchmove', handleTouchMove);
 
 // Existing code...
