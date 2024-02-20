@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive team section</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- this belowlinkfor sicalmedia icon -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     
+
+</head>
+<body>
+	
+        
+     
+	<section class="team">
+		<div class="center">
+			<h1>Our Team</h1>
+		</div>
+<!-- this is team box each team-content contain team details -->
+		<div class="team-content">
+			<div class="box">
+				<img src="img/01.png">
+				<h3>Steph Jobs</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#" class=""><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img/02.png">
+				<h3>Steph Jobs</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+			
+			<div class="box">
+				<img src="img/03.png">
+				<h3>Steph Jobs</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#" id="kuchv"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="img/04.png">
+				<h3>Steph Jobs</h3>
+				<h5>Artist</h5>
+				<div class="icons">
+					<a href="#" id="kuchv"><i class="ri-twitter-fill"></i></a>
+					<a href="#" class="kuchv"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#" class="kuchv"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div class="services">
+	<div class="servicepara">
+		<h1>Our Services</h1>
+	</div>
+	<div class="wrapper">
+		
+		<div class="box">
+		   <div class="front-face">
+			  <div class="icon">
+				 <i class="fas fa-code"></i>
+			  </div>
+			  <span>Web Design</span>
+		   </div>
+		   <div class="back-face">
+			  <span>Web Design</span>
+			  <p>
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+			  </p>
+		   </div>
+		</div>
+		<div class="box">
+		   <div class="front-face">
+			  <div class="icon">
+				 <i class="fas fa-chart-line"></i>
+			  </div>
+			  <span>Advertising</span>
+		   </div>
+		   <div class="back-face">
+			  <span>Advertising</span>
+			  <p>
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+			  </p>
+		   </div>
+		</div>
+		<div class="box">
+		   <div class="front-face">
+			  <div class="icon">
+				 <i class="fas fa-rocket"></i>
+			  </div>
+			  <span>Game Design</span>
+		   </div>
+		   <div class="back-face">
+			  <span>Game Design</span>
+			  <p>
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+			  </p>
+		   </div>
+		</div>
+		<div class="box">
+		   <div class="front-face">
+			  <div class="icon">
+				 <i class="fas fa-rocket"></i>
+			  </div>
+			  <span>Game Design</span>
+		   </div>
+		   <div class="back-face">
+			  <span>Game Design</span>
+			  <p>
+				 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in deleniti vitae beatae veritatis aliquid porro perspiciatis dolores impedit ad.
+			  </p>
+		   </div>
+		</div>
+	 </div>
+	</div>
+	<div class = "contact-section">
+		<div class = "contact-bg">
+		  
+		  <h2>contact us</h2>
+		  <div class = "line">
+			<div></div>
+			<div></div>
+			<div></div>
+		  </div>
+		  <p class = "text">We placed our gmail please do direct message there incase form not working </p>
+		</div>
+  
+  
+		<div class = "contact-body">
+		  <div class = "contact-info">
+			<div>
+			  <span><i class = "fas fa-mobile-alt"></i></span>
+			  <span>Phone No.</span>
+			  <span class = "text">1-2392-23928-2</span>
+			</div>
+			<div>
+			  <span><i class = "fas fa-envelope-open"></i></span>
+			  <span>E-mail</span>
+			  <span class = "text">mail@company.com</span>
+			</div>
+			<div>
+			  <span><i class = "fas fa-map-marker-alt"></i></span>
+			  <span>Address</span>
+			  <span class = "text">2939 Patrick Street, Vicotria TX, United States</span>
+			</div>
+			
+		  </div>
+  
+		  <div class = "contact-form">
+			<form>
+			
+				<input type = "text"  class = "form-control" placeholder=" Name">
+				
+			
+			 
+				<input type = "email" class = "form-control" placeholder="E-mail">
+				<input type = "phpne" class = "form-control" placeholder="phone">
+				
+			  
+			  <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+			 <input type = "submit" class = "send-btn" value = "send message">
+			</form>
+  
+			<div>
+			  <img src="img/contact-png.png" alt="GIF">
+			</div>
+		  </div>
+		</div>
+  
+		
+  
+		
+	  </div>
+<div id="popupContainer">
+	<div class="popup">
+		<img src="img/bcfdda408907dcdfed6e5ea98a170917.gif" alt="GIF">
+	  <span class="close">&times;</span>
+	  <p>Please checkout our other media</p>
+	  <button id="instagram">Instagram</button>
+	  <button id="closePopup">Close</button>
+	</div>
+  </div>
+
+
+  <footer style="background-color: #1b2732;margin-: 20px 0px; color: white; padding: 20px; text-align: center;">
+	<p>Copyright © 2024 waitkaro. All rights reserved.</p>
+	
+  </footer>
+  
+  <script src="script20.js"></script>
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Space Grotesk', sans-serif;
+	text-decoration: none;
+}
+body{
+	
+	background-color: #000;
+	
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+.team{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.team-content{
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+}
+.box{
+	padding: 16px;
+	background: #1b1229;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}
+
+
+
+
+/* this is hober page for click on any scial mediatab number-21 */
+
+#popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .popup img {
+	
+	max-width: 100%; /* Limit the maximum width of the GIF */
+	height: 100px; /* Ensure the aspect ratio is maintained */
+	margin-bottom: 10px; /* Add some space between the GIF and the text/buttons */
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  /* number end-21 */
+ 
+
+  .services{
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background: #000000;
+	color: #fff;
+  }
+  .services .servicepara{
+padding: 27px;
+  }
+
+.wrapper{
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrapper{
+    margin: 20px ;
+  }
+}
+.wrapper .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper .box .front-face{
+  background: #ffffff;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background: #000;
+    color: 
+    wheat;
+}
+.contact-bg{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(contact-bg.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-bg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.contact-bg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0 0.2rem;
+}
+.line div:nth-child(1),
+.line div:nth-child(3){
+    height: 3px;
+    width: 70px;
+    background: #f7327a;
+    border-radius: 5px;
+}
+.line{
+    display: flex;
+    align-items: center;
+}
+.line div:nth-child(2){
+    width: 10px;
+    height: 10px;
+    background: #f7327a;
+    border-radius: 50%;
+}
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-bg .text{
+    margin: 1.6rem 0;
+}
+.contact-body{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contact-info{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-info span{
+    display: block;
+}
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contact-info span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #f7327a;
+}
+.contact-info div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contact-info .text{
+    padding-top: 0.4rem;
+}
+.contact-form{
+    padding: 2rem 0;
+   
+    border-top: 1px solid #c7c7c7;
+}
+.contact-form form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #f7327a;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+.contact-form > div{
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-footer{
+    padding: 2rem 0;
+    background: #000;
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: #f7327a;
+    border-color: #f7327a;
+}
+
+@media screen and (min-width: 768px){
+    .contact-bg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-bg .text{
+        width: 50%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
