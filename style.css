@@ -589,12 +589,12 @@ header ul li a{
 }
 
 .banner .images .img-1{
-	background: url(img/images.jpg);
+	background: url(images.jpg);
 	background-position: center;
 	background-size: cover;
 }
 .banner .images .img-2{
-	background: url(img/W31X.gif);
+	background: url(W31X.gif);
 	
 	width:100px;
 	height:	 100px;
@@ -606,7 +606,7 @@ header ul li a{
 
 }
 .banner .images .img-5{
-	background: url(img/10-50-41-941_512.webp);
+	background: url(10-50-41-941_512.webp);
 	
 	width:130px;
 	height:	 100px;
@@ -621,7 +621,7 @@ header ul li a{
 	position: absolute;
 right: 0;
 top: 50%;
-background: url(img/mars\ \(2\).gif);
+background: url(mars\ \(2\).gif);
 width: 110px;
 
 height: 110px;
