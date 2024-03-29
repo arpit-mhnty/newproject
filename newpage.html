@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    this is testing page
+<body onload="askForPassword();">
+    <p id="content">to see number entered the correct password.</p>
+
+    <script>
+        function askForPassword() {
+            // Using a loop to keep asking for the password if it's incorrect
+            let attempts = 0;
+            while (true) {
+                const password = prompt("Enter the password:");
+                if (password === "xyz") {
+                    document.getElementById("content").innerText = "This is your number 8847806889";
+                    break; // Exit the loop if the password is correct
+                } else {
+                    attempts++;
+                    alert("Incorrect password, try again.");
+                    if (attempts >= 3) { // Limit the number of attempts
+                        alert("Too many incorrect attempts.");
+                        break;
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
