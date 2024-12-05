@@ -1,1 +1,545 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Waitkro</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+<!-- this belowlinkfor sicalmedia icon -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+ <style>
+   /* Base Styles */
+
+
+
+
+ /* Parallax Styles */
+ .parallax1 {
+   position: relative;
+   
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .overlay1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+ }
+  .overlay1 h2 {
+   font-size: 48px;
+   text-shadow: 2px 2px 5px #000;
+ }
+  .overlay1 p {
+   font-size: 20px;
+   text-shadow: 2px 2px 5px #000;
+ }
+  .custom-container {
+   color: greenyellow;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+
+
+   /* Lazy load animation for text */
+   .custom-lazy-text {
+     opacity: 0;
+     transform: translateY(30px);
+     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+     position: relative;
+     z-index: 2; /* Ensure text stays on top */
+   }
+
+
+   .custom-lazy-text.visible {
+     opacity: 1;
+     transform: translateY(0);
+   }
+   .btn {
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   text-align: center;
+   color: #ffffff;
+   background-color: #007bff;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.btn:hover {
+   background-color: #0056b3;
+   transform: translateY(-2px);
+}
+
+
+.btn:active {
+   background-color: #004494;
+   transform: translateY(0);
+}
+
+
+   /* Scroll behavior for images */
+   .custom-scroll-image {
+     transition: transform 0.5s ease-out;
+     position: relative; /* Ensure it's contained */
+     z-index: 1; /* Place image below the text */
+   }
+
+
+   /* Case study layout */
+   .custom-case-study {
+     margin-bottom: 120px; /* Space between case studies */
+     text-align: center; /* Default for mobile view */
+     position: relative; /* Ensure proper layering */
+   }
+
+
+   .custom-case-study img {
+     width: 60%;
+     height: auto;
+     max-width: 300px;
+   }
+
+
+   /* Media query for larger screens */
+   @media (min-width: 768px) {
+     .custom-case-study {
+       display: flex;
+       align-items: center;
+       text-align: left;
+     }
+
+
+     .custom-case-study .custom-text-content {
+       flex: 1;
+       padding-right: 50px;
+       position: relative; /* Ensure layering */
+     }
+
+
+     .custom-case-study .custom-image-content {
+       flex: 1;
+     }
+
+
+     .custom-case-study img {
+       max-width: 100%;
+     }
+   }
+</style>
+</head>
+<body>
+   <header style="font-size: 2vw">
+       <a href="#" class="logo">Waitkro</a>
+        
+       <ul class="headerul">
+  
+         <li ><a href="#banner">home</a></li>
+         <li><a href="#servicesp">services</a></li>
+         <li><a href="#contact-section">contact</a></li>
+        
+          
+       </ul>
+       <div class="menu-icon" onclick="toggleMenu()">
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+     </header>
+   <div class="banner"id="banner" >
+     
+     
+       <div class="images">
+         <div class="img-1"></div>
+        
+         <div class="img-2"></div>
+         <div class="img-3"></div>
+         <div class="img-4"></div>
+         <div class="img-5"></div>
+        
+       
+       </div>
+       <section class="scene parallax1" id="home1">
+           <canvas id="three-canvas"></canvas>
+           <div class="overlay1">
+             <h2>We Are Building Products</h2>
+             <p>Innovative solutions for the modern world</p>
+           </div>
+         </section>
+    
+     <div class="overlay" id="overlay">
+      
+       <div class="overlay-content"onclick=fun(1)><a id="myLink" href="#"style="color: #fff;">home</a> </div>
+       <div class="overlay-content"onclick=fun(2)><a id="myLink1" href="#"style="color: #fff;">services</a></div>
+       <div class="overlay-content"onclick=fun(3)><a id="myLink2" href="#"style="color: #fff;">contact</a></div>
+
+
+   </div>
+   <div class="custom-container">
+       <!-- Case Study 1 -->
+       <div class="custom-case-study" id="custom-case1">
+         <div class="custom-image-content">
+           <img
+             alt="Custom image"
+             class="custom-scroll-image"
+             src="https://uploads-ssl.webflow.com/5bac07f750e38287055122f9/5e30b22027a9ba298b5ffdd4_Buserino-p-800.png"
+           />
+         </div>
+         <div class="custom-text-content">
+           <div class="custom-lazy-text">
+               <p class="custom-text-sm mb-2">2025</p>
+               <h2 class="custom-text-xl custom-font-semibold mb-2">Restuman</h2>
+               <p class="custom-text-lg mb-4">We beleive transformating resturant and hotel </p>
+               <a class="btn btn-primary" href="secondpage.html">Know More</a>
+
+
+           </div>
+         </div>
+       </div>
+  
+       <!-- Case Study 2 -->
+  
+     </div>
+      
+   
+   <section class="team">
+       <div class="center">
+           <h1>Our Team</h1>
+       </div>
+<!-- this is team box each team-content contain team details -->
+       <div class="team-content">
+           <div class="box">
+               <img src="create-one--indian--man-with-blazzer--and-formal-shirtinside-looks-proffesional-with-blury-backgroun (1).png">
+               <h3>Arpit Mohanty</h3>
+               <h5>CEO</h5>
+               <div class="icons">
+                   <a href="#"onclick=openPopup()  ><i class="ri-icons/Logos/linkedin-fill.svg-fill"></i></a>
+                   <a href="#"onclick=openPopup() ><i class="ri-facebook-box-fill"></i></a>
+                   <a href="#"id="kuchv1"onclick=openPopup()><i class="ri-instagram-fill"></i></a>
+               </div>
+           </div>
+
+
+           <div class="box">
+               <img src="create-one-indian-girl-with-blazer-and-niec-blury-backgrond.png">
+               <h3>sonal pandey</h3>
+               <h5>Desinger</h5>
+               <div class="icons">
+                   <a href="#"onclick=openPopup()><i class="ri-twitter-fill"></i></a>
+                   <a href="#"onclick=openPopup()><i class="ri-facebook-box-fill"></i></a>
+                   <a href="#"onclick=openPopup()><i class="ri-instagram-fill"></i></a>
+               </div>
+           </div>
+          
+           <div class="box">
+               <img src="create-one-indian-girl-with-s-and-saree-and-blouz-proffersional-picture-niec-blury-backgrond.png">
+               <h3>ritu singh(AI)</h3>
+               <h5>CTO</h5>
+               <div class="icons">
+                   <a href="#" id="kuchv1"onclick=openPopup()><i class="ri-twitter-fill"></i></a>
+                   <a href="#"id="kuchv1"onclick=openPopup()><i class="ri-facebook-box-fill"></i></a>
+                   <a href="#"id="kuchv1"onclick=openPopup()><i class="ri-instagram-fill"></i></a>
+               </div>
+           </div>
+
+
+           <div class="box">
+               <img src="create-one--indian--man-with-blazzer--and-formal-shirtinside-looks-proffesional-with-blury-backgroun.png">
+               <h3>anuj biswas</h3>
+               <h5>Manager</h5>
+               <div class="icons">
+                   <a href="#" id="kuchv1"onclick=openPopup(1)><i class="ri-twitter-fill"></i></a>
+                   <a href="#"id="kuchv1"onclick=openPopup()><i class="ri-facebook-box-fill"></i></a>
+                   <a href="#"id="kuchv1"onclick=openPopup()><i class="ri-instagram-fill"></i></a>
+               </div>
+           </div>
+
+
+       </div>
+   </section>
+   <div class="services" >
+   <div class="servicepara"id="servicesp">
+       <h1>Our Services</h1>
+   </div>
+   <div class="wrapper">
+      
+       <div class="box">
+          <div class="front-face">
+             <div class="icon">
+                <i class="fas fa-code"></i>
+             </div>
+             <span>Web Design</span>
+          </div>
+          <div class="back-face">
+             <span>Web Design</span>
+             <p>
+               we are currently working ecommerce-"wakka.com" <br>fitness-"fitbod" <br>that will be release on  April-28
+             </p>
+           
+          </div>
+          <a href="#" style="color: blueviolet;">link >></a>
+       </div>
+       <div class="box">
+          <div class="front-face">
+             <div class="icon">
+                <i class="fas fa-mobile-alt"></i>
+             </div>
+             <span>Mobile App Devlopment</span>
+          </div>
+          <div class="back-face">
+             <span>Advertising</span>
+             <p>
+               we are currently working on farmer app called "Mokrushi" that will be release on playstore june-15
+             </p>
+          
+          </div>
+            <a href="#" style="color: blueviolet;">link >></a>
+       </div>
+       <div class="box">
+          <div class="front-face">
+             <div class="icon">
+                <i class="fas fa-rocket"></i>
+             </div>
+             <span>Game Design</span>
+          </div>
+          <div class="back-face">
+             <span>Game Design</span>
+             <p>
+               we are currently working on village based game that will be release on playstore August-27
+             </p>
+          </div>
+          <a href="#" style="color: blueviolet;">link >></a>
+       </div>
+      
+    </div>
+   </div>
+   <div class = "contact-section" id="contact-section">
+       <div class = "contact-bg">
+        
+         <h2>contact us</h2>
+         <div class = "line">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+         <p class = "text">We placed our gmail please do direct message there incase form not working </p>
+       </div>
+ 
+       <div class = "contact-body">
+         <div class = "contact-info">
+           <div>
+             <span><i class = "fas fa-mobile-alt"></i></span>
+             <span>Phone No.</span>
+             <span class = "text">91-8847606898</span>
+           </div>
+           <div>
+             <span><i class = "fas fa-envelope-open"></i></span>
+             <span>E-mail</span>
+             <span class = "text">www.rasmiranjan.com@gmail.com</span>
+           </div>
+           <div>
+             <span><i class = "fas fa-map-marker-alt"></i></span>
+             <span>Address</span>
+             <span class = "text">Cloud Based Company,Odisha,India</span>
+           </div>
+          
+         </div>
+          <div class = "contact-form">
+           <form>
+          
+               <input type = "text"  class = "form-control" placeholder=" Name">
+              
+          
+           
+               <input type = "email" class = "form-control" placeholder="E-mail">
+               <input type = "phpne" class = "form-control" placeholder="phone">
+              
+            
+             <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
+            <input type = "submit" class = "send-btn" value = "send message">
+           </form>
+            <div>
+             <img src="contact-png.png" alt="GIF">
+           </div>
+         </div>
+       </div>
+       
+       
+     </div>
+<div id="popupContainer">
+   <div class="popup">
+       <img src="bcfdda408907dcdfed6e5ea98a170917.gif" alt="GIF">
+     <span class="close">&times;</span>
+     <p id="paras"></p>
+     <button id="instagram">Instagram</button>
+     <button id="closePopup">Close</button>
+   </div>
+ </div>
+
+
+
+
+ <footer>
+   <p>&copy; 2024  Waitkro. All rights reserved.</p>
+</footer>
+<script>// Initialize Three.js Scene
+   const scene = new THREE.Scene();
+   const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+   const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('three-canvas'), alpha: true });
+   renderer.setSize(window.innerWidth, window.innerHeight);
+  
+   const geometry = new THREE.TorusGeometry(1, 0.4, 16, 100);
+   const material = new THREE.MeshBasicMaterial({ color: 0x00ffcc, wireframe: true });
+   const torus = new THREE.Mesh(geometry, material);
+   scene.add(torus);
+  
+   camera.position.z = 10;
+  
+   // Create Balls with Random Properties
+   const balls = [];
+   const ballCount = 20;
+   for (let i = 0; i < ballCount; i++) {
+     const ballGeometry = new THREE.SphereGeometry(0.2, 16, 16);
+     const ballMaterial = new THREE.MeshBasicMaterial({ color: Math.random() * 0xffffff });
+     const ball = new THREE.Mesh(ballGeometry, ballMaterial);
+  
+     // Set random initial positions
+     ball.position.set(
+       Math.random() * 10 - 5,
+       Math.random() * 10 - 5,
+       Math.random() * 10 - 5
+     );
+  
+     // Attach a random velocity for each ball
+     ball.userData = {
+       velocity: {
+         x: Math.random() * 0.05 - 0.025,
+         y: Math.random() * 0.05 - 0.025,
+         z: Math.random() * 0.05 - 0.025,
+       },
+     };
+  
+     balls.push(ball);
+     scene.add(ball);
+   }
+  
+   // Add Scroll-Dependent Behavior
+   let scrollOffset = 0;
+   window.addEventListener('scroll', () => {
+     const scrollFactor = window.scrollY / window.innerHeight;
+  
+     // Make the torus "jump" and spin faster
+     torus.position.y = Math.sin(scrollFactor * 10) * 2;
+     torus.rotation.z += scrollFactor * 0.1;
+  
+     // Balls react chaotically to scroll
+     balls.forEach((ball) => {
+       ball.scale.set(
+         Math.random() * scrollFactor + 1,
+         Math.random() * scrollFactor + 1,
+         Math.random() * scrollFactor + 1
+       );
+  
+       ball.material.color.setHex(Math.random() * 0xffffff);
+     });
+  
+     scrollOffset = scrollFactor * 0.1; // Increase rotation speed
+   });
+  
+   // Animate Scene
+   function animate() {
+     requestAnimationFrame(animate);
+  
+     // Rotate torus
+     torus.rotation.x += 0.01 + scrollOffset;
+     torus.rotation.y += 0.01 + scrollOffset;
+  
+     // Update balls' positions
+     balls.forEach((ball) => {
+       ball.position.x += ball.userData.velocity.x;
+       ball.position.y += ball.userData.velocity.y;
+       ball.position.z += ball.userData.velocity.z;
+  
+       // Reverse direction if balls hit boundaries
+       if (Math.abs(ball.position.x) > 5) ball.userData.velocity.x *= -1;
+       if (Math.abs(ball.position.y) > 5) ball.userData.velocity.y *= -1;
+       if (Math.abs(ball.position.z) > 5) ball.userData.velocity.z *= -1;
+     });
+  
+     renderer.render(scene, camera);
+   }
+  
+   animate();
+   window.addEventListener('scroll', function () {
+     const windowHeight = window.innerHeight;
+
+
+     // Scroll behavior for each case study
+     document.querySelectorAll('.custom-case-study').forEach((study) => {
+       const image = study.querySelector('img');
+       const text = study.querySelector('.custom-lazy-text');
+       const studyRect = study.getBoundingClientRect().top;
+
+
+       // Apply parallax effect to the image
+       if (studyRect < windowHeight && studyRect > -image.height) {
+         const offset = window.scrollY * -0.45;
+         image.style.transform = `translateY(${offset}px)`;
+       }
+
+
+       // Lazy load text
+       if (studyRect < windowHeight * 0.8) {
+         text.classList.add('visible');
+       }
+     });
+   });
+   // Get all the boxes
+const boxes = document.querySelectorAll('.box');
+
+
+// Function to check if a box is in the viewport
+function checkScroll() {
+ boxes.forEach(box => {
+   const rect = box.getBoundingClientRect();
+  
+   // Check if the box is in view
+   if (rect.top < window.innerHeight && rect.bottom >= 0) {
+     box.classList.add('open'); // Add the 'open' class to show the back face
+   } else {
+     box.classList.remove('open'); // Remove the 'open' class when it's out of view
+   }
+ });
+}
+
+
+// Listen for the scroll event
+window.addEventListener('scroll', checkScroll);
+
+
+// Run once initially to handle visibility when page loads
+checkScroll();
+
+
+   </script>
+ <script src="script20.js"></script>
+</body>
+
+
+
+
+
