@@ -24,7 +24,7 @@ function openPopup(d) {
   // Adding event listener to Instagram button inside the popupContainer
   document.getElementById('instagram').addEventListener('click', function() {
     // Replace 'https://www.instagram.com/' with your Instagram URL
-    window.open('https://www.instagram.com/', '_blank');
+    window.open('https://www.instagram.com/hey.mohanty/profilecard/?igsh=NDFuNnJjdHlvdzcy', '_blank');
   });
   
   // Adding event listener to close button inside the popupContainer
